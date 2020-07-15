@@ -1,0 +1,6 @@
+classes= CLASS_NUM
+train  = DATA_LIST_PATH
+valid  = DATA_LIST_PATH
+names = NAME_LIST_PATH
+backup = BACKUP_DIR
+
