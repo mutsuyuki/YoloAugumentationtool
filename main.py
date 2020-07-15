@@ -93,6 +93,9 @@ if __name__ == '__main__':
     outImageDir = outDir + "/JPEGImages/"
     outLabelDir = outDir + "/labels/"
 
+    if not os.path.exists(inLabelTxtDir):
+        os.makedirs(inLabelTxtDir)
+
     if not os.path.exists(outDir):
         os.makedirs(outDir)
 
@@ -101,7 +104,6 @@ if __name__ == '__main__':
     
     if not os.path.exists(outLabelDir):
         os.makedirs(outLabelDir)
-
 
     # JSON --> yolo教師ファイルへ
     print("start converting json to yolo teacher file")
